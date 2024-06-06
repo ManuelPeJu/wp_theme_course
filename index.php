@@ -9,7 +9,7 @@
     <header class="header">
         <div class="contenedor">
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
             </div>
             <nav>
                 <a href="/wpgymfitness/nosotros">Nosotros</a>
