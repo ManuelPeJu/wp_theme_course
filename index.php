@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GymFitness</title>
+    <link rel="shortcut icon" href="<?php get_template_directory_uri(); ?>/img/logo.svg" type="image/x-icon">
+    <?php 
+        wp_head(); // charge a lot of wp content example: scripts and css 
+    ?> 
 </head>
 <body>
     <header class="header">
@@ -11,8 +15,9 @@
             <div class="logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
             </div>
-            <!-- add the dinamyc menu -->
 
+            
+            <!-- add the dynamic menu -->
             <?php 
 
                 $args = array (
