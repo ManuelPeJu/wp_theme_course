@@ -21,7 +21,7 @@
         // 2.- param are a function that get the direction of the stylesheet
         // 3.- param are for the dependencies of your css processor example: "Bootstrap" or "Sass"
         // 4.- param are for the version of your dependency, very effective to control the version and make the caché work better
-        wp_enqueue_style("style", get_stylesheet_uri(), array(), "1.0.0");
+        wp_enqueue_style("style", get_stylesheet_uri(), array("normalize"), "1.0.0");
     }
 
     add_action("wp_enqueue_scripts", "gymfitness_scripts_styles");

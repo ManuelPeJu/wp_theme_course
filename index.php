@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="contenedor">
+        <div class="container navbar">
             <div class="logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
             </div>
@@ -23,7 +23,7 @@
                 $args = array (
                     "theme_location" => "menu-principal", // locate the menu u want to render
                     "container" => "nav", // set the container as a nav tag, default container are a div
-                    "container_class" => "menu-container", // set the classname for a css modification
+                    "container_class" => "main-menu", // set the classname for a css modification
                 );
 
                 wp_nav_menu($args); // this function render a menu taking a associative array as menu location
