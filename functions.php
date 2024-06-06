@@ -15,6 +15,7 @@
 
     //add CSS function
     function gymfitness_scripts_styles() {
+        wp_enqueue_style("normalize", "https://necolas.github.io/normalize.css/8.0.1/normalize.css", array(), "8.0.1");
         //using this funciont make us charge the css.
         // 1.- param are the name of the css (can be a unique name for every sheet)
         // 2.- param are a function that get the direction of the stylesheet
