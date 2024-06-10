@@ -91,6 +91,10 @@ img {
     height: auto;
 }
 
+.featured-image {
+    margin-bottom: 3rem;
+}
+
 .container {
     width: min(95%, 120rem);
     margin: 0 auto;
