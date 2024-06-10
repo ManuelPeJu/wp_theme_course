@@ -91,6 +91,10 @@ img {
     height: auto;
 }
 
+hr {
+    border: 1px solid var(--light-grey);
+}
+
 .featured-image {
     margin-bottom: 3rem;
 }
@@ -204,4 +208,26 @@ img {
     .main-menu a:hover::after {
         transform: scaleX(1);
     }
+}
+
+
+/* FOOTER */
+
+.footer-content {
+    padding: 4rem 0;
+}
+
+.footer .main-menu a {
+    color: var(--dark);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 1rem;
+}
+
+.footer .main-menu a::before, 
+.footer .main-menu a::after {
+    display: none;
+}
+.footer .current_page_item {
+    border: none;
 }
