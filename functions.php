@@ -1,6 +1,11 @@
 <?php 
 
-
+    //image support
+    function gymfitness_setup(){
+        // featured images
+        add_theme_support("post-thumbnails");
+    }
+    add_action("after_setup_theme", "gymfitness_setup");
     //Menu function
     function gymfitness_menus() {
         register_nav_menus(array(
