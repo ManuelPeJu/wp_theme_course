@@ -4,6 +4,10 @@
     function gymfitness_setup(){
         // featured images
         add_theme_support("post-thumbnails");
+
+        //seo for titles
+        add_theme_support("title-tag");
+
     }
     add_action("after_setup_theme", "gymfitness_setup");
     //Menu function
