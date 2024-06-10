@@ -11,8 +11,10 @@
                 );
 
                 wp_nav_menu($args); // this function render a menu taking a associative array as menu location
-                
+
             ?>
+
+            <p class="copyright">Todos los derechos reservados. <?php echo get_bloginfo("name") . " " . date("Y"); ?></p>
         </div>
     </footer>
 
