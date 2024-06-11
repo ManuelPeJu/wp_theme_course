@@ -7,6 +7,9 @@
 ?>
 
     <main class="container section">
+        <?php 
+            get_template_part("template-parts/pagina");
+        ?>
         <ul class="grid-list">
             <?php 
                 $args = array (
