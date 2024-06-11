@@ -15,6 +15,3 @@
     <?php 
         get_footer(); // get the footer
     ?>
-
-</body>
-</html>
