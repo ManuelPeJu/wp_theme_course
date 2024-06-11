@@ -21,14 +21,25 @@
                         <li class="card">
                             <?php the_post_thumbnail(); ?>
                             <div class="content">
-                                <a href="<?php the_permalink(); ?>">
-                                    <h3><?php the_title(); ?></h3>
+                                <a href="<?php the_permalink(); ?>"> <!-- Return the direct permalink to our classes -->
+                                    <h3>
+                                        <?php the_title(); ?>
+                                    </h3>
                                 </a>
+                                <?php 
+                                    /* get_field(''); obtains data from a field and stores it in a variable */
+                                    $hora_inicio = get_field('hora_inicio');
+                                    $hora_fin = get_field('hora_fin');
+                                ?>
+                                <p class="">
+                                    <!-- the_field(''); obtains the data collected on the variable that used get_field(''); -->
+                                    <?php the_field('dias_clase'); ?> - <?php echo $hora_inicio . " a " . $hora_fin ?>
+                                </p>
                             </div>
                         </li>
             <?php 
-                    }
-                    wp_reset_postdata(); // After looping through a separate query, this function restores the $post global to the current post in the main query.
+                }
+                wp_reset_postdata(); // After looping through a separate query, this function restores the $post global to the current post in the main query.
             ?>
             
         </ul>
