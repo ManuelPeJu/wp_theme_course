@@ -17,7 +17,26 @@ class GymFitness_Clases_Widget extends WP_Widget {
 	}
 
     public function form( $instance ) {
-   
+        $cantidad = !empty($instance['cantidad']) ? $instance['cantidad'] : esc_html('¿Cuántas clases deseas mostrar?');
+        ?>
+
+            <p>
+                <label for="<?php echo esc_attr($this->get_field_id('cantidad')) ?>">
+                    <?php 
+                        esc_attr_e('¿Cuántas clases deseas mostrar?')
+                    ?>
+                </label>
+                <input 
+                    class="widefat"
+                    id="<?php echo esc_attr($this->get_field_id('cantidad')) ?>"
+                    name="<?php echo esc_attr($this->get_field_name('cantidad')) ?>"
+                    type="number"
+                    value="<?php echo esc_attr($cantidad) ?>"
+                />
+
+            </p>
+
+        <?php 
    	}
 
 	public function update( $new_instance, $old_instance ) {
