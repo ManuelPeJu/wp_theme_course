@@ -13,7 +13,7 @@ class GymFitness_Clases_Widget extends WP_Widget {
 	}
 
 	public function widget( $args, $instance ) {
-        
+        echo $instance['cantidad'];
 	}
 
     public function form( $instance ) {
@@ -40,7 +40,9 @@ class GymFitness_Clases_Widget extends WP_Widget {
    	}
 
 	public function update( $new_instance, $old_instance ) {
-
+        $instance = array();
+        $instance['cantidad'] = (!empty($new_instance['cantidad'])) ? sanitize_text_field($new_instance['cantidad']) : "";
+        return $instance;
 	}
 } 
 
