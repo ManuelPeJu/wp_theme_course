@@ -28,9 +28,9 @@ class GymFitness_Clases_Widget extends WP_Widget {
                     $clases->the_post();
                     ?>
                     <li>
-                        <div class="imagen">
+                        <div class="class-imagen">
                             <?php 
-                                the_post_thumbnail("medium");
+                                the_post_thumbnail("thubmnail");
                             ?>
                         </div>
                         <div class="class-content">
