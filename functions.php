@@ -1,6 +1,10 @@
 <?php 
 
-    //image support
+    // Includes 
+    require get_template_directory() . '/includes/widgets.php';
+
+
+    // image support
     function gymfitness_setup(){
         // featured images
         add_theme_support("post-thumbnails");
@@ -22,7 +26,7 @@
 
     add_action("init", "gymfitness_menus"); // first param = the hook, second param = your function but on string
 
-    //add CSS function
+    // add CSS function
     function gymfitness_scripts_styles() {
         wp_enqueue_style("normalize", "https://necolas.github.io/normalize.css/8.0.1/normalize.css", array(), "8.0.1");
         //using this funciont make us charge the css.
@@ -34,6 +38,8 @@
     }
 
     add_action("wp_enqueue_scripts", "gymfitness_scripts_styles");
+
+    // Sidebar Widget
 
     function gymfitness_widgets() {
         register_sidebar(array(
