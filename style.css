@@ -434,10 +434,6 @@ hr {
         display: flex;
         justify-content: space-evenly;
      }
-
-    .post-categories {
-        flex-direction: row;
-    }
 }
 
 .info-meta p,
@@ -451,14 +447,20 @@ hr {
     color: var(--primary);
 }
 
-.info-meta .post-categories li {
-    display: flex;
-    flex-direction: row;
-}
 
 .info-meta,
 .categories {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
+}
+
+.info-meta,
+.categories p, a:hover{
+    color: var(--primary);
+}
+
+.info-meta .categories .post-categories {
+    display: flex;
+    gap: 0.5rem;
 }
