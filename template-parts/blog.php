@@ -1,4 +1,7 @@
 <li class="card">
+    <?php 
+        the_category(); // get categories
+    ?>
     <?php the_post_thumbnail(); ?>
     <div class="content">
         <a href="<?php the_permalink(); ?>"> <!-- Return the direct permalink to our classes -->

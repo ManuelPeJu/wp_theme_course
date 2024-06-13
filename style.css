@@ -271,6 +271,31 @@ hr {
     overflow: hidden;
 }
 
+/* categories on cards */
+.card .post-categories {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.card .post-categories li {
+    background-color: var(--primary);
+    padding: .5rem 1rem;
+    border-radius: 0.8rem;
+
+}
+
+.card .post-categories a  {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    font: 1.6rem;
+}
+
+/* cards again */
+
 .card:hover img {
     transform: scale(1.1);
 }
