@@ -1,7 +1,12 @@
 <?php 
     get_header();
 ?>
-<h1>Hola amejo</h1>
+
+    <main class="container section">
+        <?php 
+            get_template_part("template-parts/post");
+        ?>
+    </main>
 
 <?php 
     get_footer();

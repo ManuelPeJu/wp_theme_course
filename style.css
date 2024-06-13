@@ -423,3 +423,32 @@ hr {
     height: 300px;
     object-fit: cover;
 }
+
+/* info-meta */
+.info-meta {
+    background-color: var(--light-grey);
+    padding: 2rem;
+}
+@media (min-width: 992px) {
+     .info-meta {
+        display: flex;
+        justify-content: space-evenly;
+     }
+}
+
+.info-meta p,
+.info-meta a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.info-meta span {
+    color: var(--primary);
+}
+
+.info-meta .categories {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
