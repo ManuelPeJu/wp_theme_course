@@ -64,8 +64,26 @@
             'after_title'    => '</h3>',
         ));
     }
-    add_action("widgets_init", "gymfitness_widgets")
+    add_action("widgets_init", "gymfitness_widgets");
 
+
+
+
+    //Create Shortcode
+    function gymfitness_ubicacion_shortcode() {
+        ?>
+            <div class="map">
+                <?php 
+                    if(is_page("contacto")) {
+                        the_field("ubicacion"); // show the map with the location
+                    }
+                ?>
+            </div>
+            <h2 class="text-center primary-text">Formulario de Contacto</h2>
+        <?php
+        echo do_shortcode('[contact-form-7 id="463757a" title="Formulario de contacto 1"]');
+    }
+    add_shortcode("gymfitness_ubicacion", "gymfitness_ubicacion_shortcode");
 
 
 ?>

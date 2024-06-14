@@ -467,10 +467,6 @@ hr {
 
 /* CONTACT FORM 7 */
 
-.wpcf7-form {
-
-}
-
 .wpcf7-form label {
     font-weight: 700;
 
@@ -508,4 +504,8 @@ hr {
     margin: 2rem auto 0 auto;
     background-color: var(--primary);
     opacity: 1;
+}
+
+.map {
+    margin-bottom: 5rem;
 }
