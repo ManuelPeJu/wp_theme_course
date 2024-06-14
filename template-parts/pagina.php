@@ -7,5 +7,8 @@
             // set the featured image. As 1st param, u can set the size of the picture.
             // As 2nd param with a associative array, u can set a class to modify with ur css
         }
+        if(is_page("contacto")) {
+            the_field("ubicacion"); // show the map with the location
+        }
         the_content(); // set the content of the page/post
     endwhile; // end the loop
