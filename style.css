@@ -516,3 +516,66 @@ hr {
     max-width: 80rem;
     margin: 0 auto;
 }
+
+.areas {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 480px) {
+    .areas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .areas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.area {
+    height: 25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area::after {
+    content: "";
+    background-image: linear-gradient(rgb(0 0 0 / .75), rgb(0 0 0 / .75));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.area img {
+    height: 25rem;
+    width: 50rem;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .area,
+    .area img {
+        height: 33rem;
+    }
+}
+
+.area p {
+    position: absolute;
+    color: var(--white);
+    z-index: 100;
+    font-weight: 900;
+}
+@media (min-width: 768px) {
+    .area p {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .area:hover p {
+        opacity: 1;
+    }
+}
