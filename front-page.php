@@ -11,6 +11,15 @@
     </p>
 </section>
 
+<section class="areas">
+    <div class="area">
+        <?php
+            $area_1 =  get_field("area_1");
+           
+         ?>
+    </div>
+</section>
+
 <main class="container section">
     
 </main>
