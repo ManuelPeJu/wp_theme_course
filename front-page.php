@@ -55,7 +55,10 @@
 </section>
 
 <main class="container section">
-    
+    <h2 class="text-center primary-text">Nuestras Clases</h2>
+    <?php 
+        gymfitness_lista_clases(4);
+    ?>
 </main>
 
 <?php 
