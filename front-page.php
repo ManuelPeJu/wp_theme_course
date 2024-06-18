@@ -77,7 +77,7 @@
 
 <section class="testimonies">
     <h2 class="text-center white-text">Testimoniales</h2>
-    <div class="testimonials-container">
+    <div class="testimonials-container swiper">
         <?php 
             gymfitness_testimoniales();
         ?>
