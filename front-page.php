@@ -57,8 +57,15 @@
 <main class="container section">
     <h2 class="text-center primary-text">Nuestras Clases</h2>
     <?php 
-        gymfitness_lista_clases(4);
+        gymfitness_lista_clases(4); 
     ?>
+
+    <div class="button-container">
+        <a href="<?php echo esc_url(get_permalink(21))?>" class="button primary-button">
+            Ver todas las clases
+        </a>
+    </div>
+    
 </main>
 
 <?php 
