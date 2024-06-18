@@ -75,6 +75,16 @@
     ?>
 </section>
 
+<section class="testimonies">
+    <h2 class="text-center white-text">Testimoniales</h2>
+    <div class="testimonial-container">
+        <?php 
+            gymfitness_testimoniales();
+        ?>
+    </div>
+
+</section>
+
 <?php 
     get_footer();
 ?>
