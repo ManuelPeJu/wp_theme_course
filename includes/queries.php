@@ -55,32 +55,31 @@ function gymfitness_instructores(){
             while ($instructors->have_posts()) {
                 $instructors->the_post();
             ?>
-                <li class="instructors">
+                <li class="instructor">
                    <?php 
-                        the_post_thumbnail("large")
+                        the_post_thumbnail("large");
                    ?>
-                   <div class="content text-center">
+                    <div class="content text-center">
                         <h3><?php the_title(); ?></h3>
-                   </div>
-                   <div class="specialty">
-                        <?php 
-                            $esp = get_field("especialidades");
+                        <?php the_content(); ?>
 
-                            foreach($esp as $e) {
-                                ?> 
-                                    <span class="">
-                                        <?php 
-                                            echo esc_html($e);
-                                        ?>
-                                    </span>
-                                <?php
-                            }
+                         <div class="specialty">
+                            <?php 
+                                $esp = get_field("especialidades");
 
-                            // echo "<pre>";
-                            // var_dump($esp);
-                            // echo "</pre>";
-                        ?>
-                   </div>
+                                foreach($esp as $e) {
+                                    ?> 
+                                        <span class="label">
+                                            <?php 
+                                                echo esc_html($e);
+                                            ?>
+                                        </span>
+                                    <?php
+                                }
+                            ?>
+                        </div>
+                   </div
+                   
                 </li>
             <?php
             }
