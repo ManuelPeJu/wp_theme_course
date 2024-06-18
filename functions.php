@@ -32,6 +32,7 @@
         // CSS Files
         wp_enqueue_style("normalize", "https://necolas.github.io/normalize.css/8.0.1/normalize.css", array(), "8.0.1");
         wp_enqueue_style("lightboxcss", get_template_directory_uri() . "/css/lightbox.css", array(), "2.11.4" );
+        wp_enqueue_style("swiper-css", "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css", array(), "11.1.4");
         //using this funciont make us charge the css.
         // 1.- param are the name of the css (can be a unique name for every sheet)
         // 2.- param are a function that get the direction of the stylesheet
@@ -41,6 +42,8 @@
 
         // JS Files
         wp_enqueue_script("lightboxjs", get_template_directory_uri() . "/js/lightbox.js", array("jquery"), "2.11.4", true );
+        wp_enqueue_script("swiper-js", "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js", array(), "11.1.4", true);
+        wp_enqueue_script("scripts", get_template_directory_uri(), array("swiper-js"), "1.0.0", true);
     }
     add_action("wp_enqueue_scripts", "gymfitness_scripts_styles");
 
