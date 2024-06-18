@@ -109,6 +109,39 @@ hr {
     margin: 0 auto;
 }
 
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    background-color: var(--primary);
+    color: var(--black);
+    padding: 1rem 3rem;
+    display: block;
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    margin: 1rem 0;
+}
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.primary-button {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.primary-button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
 /* utilities */
 
 .text-center {
