@@ -65,8 +65,15 @@
             Ver todas las clases
         </a>
     </div>
-    
 </main>
+
+<section class="container section">
+    <h2 class="text-center primary-text">Nuestros Instructores</h2>
+    <p class="text-center">Instructores profesionales que te ayudarán a lograr tus objetivos</p>
+    <?php 
+        gymfitness_instructores();
+    ?>
+</section>
 
 <?php 
     get_footer();
