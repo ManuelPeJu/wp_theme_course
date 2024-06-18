@@ -89,5 +89,42 @@ function gymfitness_instructores(){
     <?php
 }
 
+function gymfitness_testimoniales() {
+    ?>
+        <ul class="testimonial-grid">
+            <?php
+            $args = array(
+                'post_type' => 'testimoniales', // post type that we want to check
+            );
+
+            $testimoniales = new WP_Query($args); // create queries to the WordPress database
+
+            while ($testimoniales->have_posts()) {
+                $testimoniales->the_post();
+            ?>
+                <li class="testimonial text-center">
+                   <blockquote>
+                        <?php 
+                            the_content();
+                        ?>
+                   </blockquote>
+
+                   <footer class="testimonial-footer">
+                        <?php 
+                            the_post_thumbnail("thumbnail");
+                        ?>
+                        <p>
+                            <?php the_title(); ?>
+                        </p>
+                   </footer>
+                </li>
+            <?php
+            }
+            wp_reset_postdata(); // After looping through a separate query, this function restores the $post global to the current post in the main query.
+            ?>
+        </ul>
+    <?php
+}
+
 
 ?>
