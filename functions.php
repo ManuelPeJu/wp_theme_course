@@ -90,4 +90,21 @@
     add_shortcode("gymfitness_ubicacion", "gymfitness_ubicacion_shortcode");
 
 
+    // dynamic images
+    function gymfitness_hero_imagen() {
+        // getting the id from the page
+        $front_id = get_option("page_on_front"); // get the info on admin/options.php a hidden panel WP
+
+        // getting the img
+        $id_imagen = get_field("hero_imagen");
+        //getting the rute
+
+        //creating css
+
+        //includes css code
+
+    }
+    add_action("init", "gymfitness_hero_imagen");
 ?>
+
+

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container navbar">
+        <nav class="container navbar"> 
             <div class="logo">
                 <a href="<?php echo site_url("/"); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
@@ -30,5 +30,20 @@
                 wp_nav_menu($args); // this function render a menu taking a associative array as menu location
  
             ?>
-        </div>
+        </nav>
+        <?php 
+            if(is_front_page()) {
+                ?>                
+
+                    <div class="tagline text-center">
+                        <h1>
+                            <?php 
+                               the_field("hero_heading");
+                            ?>
+                        </h1>                        
+                    </div>
+
+                <?php
+            }
+        ?>
     </header>
