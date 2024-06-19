@@ -13,7 +13,7 @@
         <nav class="container navbar"> 
             <div class="logo">
                 <a href="<?php echo site_url("/"); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
+                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
                 </a>
             </div>
 
