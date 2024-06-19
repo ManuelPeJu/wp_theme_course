@@ -35,7 +35,7 @@
             if(is_front_page()) {
                 ?>                
                     <div class="tagline text-center container">
-                        <h1>
+                        <h1 class="ml2">
                             <?php 
                                the_field("hero_heading");
                             ?>

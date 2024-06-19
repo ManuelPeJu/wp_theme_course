@@ -43,7 +43,8 @@
         // JS Files
         wp_enqueue_script("lightboxjs", get_template_directory_uri() . "/js/lightbox.js", array("jquery"), "2.11.4", true );
         wp_enqueue_script("swiper-js", "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js", array(), "11.1.4", true);
-        wp_enqueue_script("scripts", get_template_directory_uri(). "/js/scripts.js", array("swiper-js"), "1.0.0", true);
+        wp_enqueue_script("anime", "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js", array(), "2.0.2", true);
+        wp_enqueue_script("scripts", get_template_directory_uri(). "/js/scripts.js", array("swiper-js", "anime"), "1.0.0", true);
     }
     add_action("wp_enqueue_scripts", "gymfitness_scripts_styles");
 
