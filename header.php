@@ -8,7 +8,7 @@
         wp_head(); // charge a lot of wp content example: scripts and css 
     ?> 
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header class="header">
         <nav class="container navbar"> 
             <div class="logo">
@@ -34,15 +34,18 @@
         <?php 
             if(is_front_page()) {
                 ?>                
-
-                    <div class="tagline text-center">
+                    <div class="tagline text-center container">
                         <h1>
                             <?php 
                                the_field("hero_heading");
                             ?>
-                        </h1>                        
+                        </h1> 
+                        <p>
+                            <?php 
+                                the_field("hero_texto");
+                            ?>
+                        </p>                       
                     </div>
-
                 <?php
             }
         ?>
