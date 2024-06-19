@@ -38,3 +38,19 @@ if(textWrapper) {
         delay: 1000
         });
 }
+
+
+// sticky navbar
+
+document.addEventListener("DOMContentLoaded", gymWordPress);
+
+window.onscroll = function() {
+    const scroll = window.scrollY;
+    const navbar = document.querySelector(".navbar");
+
+    if(scroll > 300) {
+        navbar.classList.add("fixed-top");
+    } else {
+        navbar.classList.remove("fixed-top");
+    }
+}

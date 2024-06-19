@@ -210,6 +210,24 @@ body.home .header {
     font-size: 2rem;
 }
 
+@media (min-width: 992px){
+    .fixed-top {
+        position: fixed;
+        width: 100%;
+        top:0;
+        left: 0;
+        background-color: var(--dark-grey);
+        padding: 1rem 5rem;
+        height: 10rem;
+        z-index: 100;
+        transition: background-color 300ms ease-in-out;
+    }
+
+    .fixed-top .logo {
+        width: 12rem;
+    }
+}
+
 
 /* .main-menu {
     display: none;
