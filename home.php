@@ -13,6 +13,7 @@
     </ul>
 </main>
 
+
 <?php
     get_footer(); // get the footer
 ?>

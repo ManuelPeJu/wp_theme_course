@@ -37,6 +37,13 @@ if(textWrapper) {
         easing: "easeOutExpo",
         delay: 1000
         });
+
+        const hamburguer = document.querySelector(".hamburguer-menu svg");
+        hamburguer.addEventListener("click", function() {
+            const mainMenu = document.querySelector(".container-menu"); 
+            mainMenu.classList.toggle("show");
+        })
+
 }
 
 
@@ -48,9 +55,11 @@ window.onscroll = function() {
     const scroll = window.scrollY;
     const navbar = document.querySelector(".navbar");
 
-    if(scroll > 300) {
+    if(scroll > 100) {
         navbar.classList.add("fixed-top");
     } else {
         navbar.classList.remove("fixed-top");
     }
 }
+
+
