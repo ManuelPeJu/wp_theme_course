@@ -16,20 +16,28 @@
                     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
                 </a>
             </div>
+            <div class="hamburguer-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div>
 
-            
+            <div class="container-menu">
+                <?php 
+                    $args = array (
+                        "theme_location" => "menu-principal", // locate the menu u want to render
+                        "container" => "nav", // set the container as a nav tag, default container are a div
+                        "container_class" => "main-menu", // set the classname for a css modification
+                    );  
+
+                    wp_nav_menu($args); // this function render a menu taking a associative array as menu location
+                ?>
+            </div>
             <!-- add the dynamic menu -->
-            <?php 
-
-                $args = array (
-                    "theme_location" => "menu-principal", // locate the menu u want to render
-                    "container" => "nav", // set the container as a nav tag, default container are a div
-                    "container_class" => "main-menu", // set the classname for a css modification
-                );
-
-                wp_nav_menu($args); // this function render a menu taking a associative array as menu location
- 
-            ?>
+           
         </nav>
         <?php 
             if(is_front_page()) {
