@@ -870,9 +870,14 @@ body.home .header {
 .comments input[type = "text"] {
     border: 1.5px solid var(--light-grey);
     width: 100%;
+    padding: 1rem;
+
 }
 
 .comments input[type = "text"] {
-    padding: 1rem;
     margin: .5rem 0;
+}
+
+h3.comments {
+    margin: 3rem 0;
 }
