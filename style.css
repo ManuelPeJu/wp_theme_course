@@ -881,3 +881,25 @@ body.home .header {
 h3.comments {
     margin: 3rem 0;
 }
+
+.comments-list .comment {
+    background-color: var(--light-grey);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+}
+
+.comments-list a {
+    color: var(--primary);
+}
+
+.comments-list cite {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.comments-list .children .comment {
+    background-color: var(--white);
+    margin: 2rem 0;
+}
