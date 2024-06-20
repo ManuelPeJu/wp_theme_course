@@ -903,3 +903,27 @@ h3.comments {
     background-color: var(--white);
     margin: 2rem 0;
 }
+
+/* Pagination */
+
+.pagination .screen-reader-text {
+    visibility: hidden;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.nav-links a {
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 700;
+    padding: .5rem;
+}
+
+.nav-links .current {
+    font-size: 1.4rem;
+    padding: .5rem;
+}

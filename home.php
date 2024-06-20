@@ -11,6 +11,9 @@
             }
         ?>
     </ul>
+    <?php 
+       the_posts_pagination();
+    ?>
 </main>
 
 
