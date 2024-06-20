@@ -113,23 +113,27 @@ hr {
     display: flex;
     justify-content: flex-end;
 }
-
+/* Buttons */
+.form-submit .submit,
 .button {
     background-color: var(--primary);
     color: var(--black);
     padding: 1rem 3rem;
     display: block;
     flex: 1;
+    width: 100%;
     text-align: center;
     font-weight: 700;
     text-transform: capitalize;
     border-radius: .5rem;
     margin: 1rem 0;
+    border: none;
 }
 @media (min-width: 768px) {
     .button {
         display: inline-block;
         flex: 0 0 auto;
+        width: auto;
     }
 }
 
@@ -833,4 +837,36 @@ body.home .header {
 .ml2 .letter {
     display: inline-block;
     line-height: 1em;
+}
+
+/* Comments */
+
+.comments {
+    width: min(95% 60rem);
+    margin: 5rem auto 0 auto;
+}
+
+.comment-reply-title {
+    color: var(--primary);
+
+}
+
+.logged-in-as a {
+    color: var(--primary);
+}
+
+.comment-form-comment label {
+    font-weight: 700;
+    margin-bottom: 2rem 0;
+    display: block;
+}
+
+.comment-form-comment textarea {
+    border: 1.5px solid var(--light-grey);
+    width: 100%;
+}
+
+.form-submit .submit {
+    background-color: var(--primary);
+    color: var(--white);
 }
