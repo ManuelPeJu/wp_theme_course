@@ -55,7 +55,7 @@ window.onscroll = function() {
     const scroll = window.scrollY;
     const navbar = document.querySelector(".navbar");
 
-    if(scroll > 100) {
+    if(scroll > 50) {
         navbar.classList.add("fixed-top");
     } else {
         navbar.classList.remove("fixed-top");
