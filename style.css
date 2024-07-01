@@ -170,13 +170,13 @@ hr {
 body.home .header {
     padding-top: 2rem;
     height: auto;
-    min-height: 80rem;
+    min-height: 100rem;
     background-size: cover;
     background-position: center center;
 }
 
 @media (min-width: 768px) {
-    body .header {
+    body.home .header {
         height: 100vh;
         max-height: 100rem;
     }
