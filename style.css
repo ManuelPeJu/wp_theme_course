@@ -548,11 +548,14 @@ body.home .header {
 .info-meta {
     background-color: var(--light-grey);
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width: 992px) {
      .info-meta {
         display: flex;
         justify-content: space-evenly;
+        flex-direction: row;
      }
 }
 
@@ -628,6 +631,9 @@ body.home .header {
 
 .map {
     margin-bottom: 5rem;
+}
+.leaflet-map {
+    background-color: red;
 }
 
 /* HOME PAGE */
